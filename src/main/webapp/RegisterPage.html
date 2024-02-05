@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Register Form</title>
+        <link rel="stylesheet" href="style.css">                        
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Faculty Register</header>
+                    <form action="RegisterServlet"  method="post">
+                          
+                          <div class="field input-field">
+                            <input type="text"  name="name" placeholder="Enter name" class="input" required>
+                        </div>                
+                    
+                        <div class="field input-field">
+                            <input type="email"  name="email" placeholder="Enter email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password"  name="password" placeholder="Enter password" class="password" required>
+                        </div>
+						
+						<div class="drop-down">
+						<select name="qualification">
+						<option value="b.tech">B.tech</option>
+						<option value="m.tech">M.tech</option>
+						<option value="phd">PHD</option>
+						</select>
+						</div>
+						
+						<div class="drop-down">
+						<select name="designation">
+						<option value="professor">Professor</option>
+						<option value="associativeprofessor">Associative Professor</option>
+						<option value="assistantprofessor">Assistant Professor</option>
+						</select>
+						</div>
+						
+						<div class="drop-down">
+						<select name="department">
+						<option value="cse">CSE</option>
+						<option value="it">IT</option>
+						<option value="ece">ECE</option>
+						</select>
+						</div>
+						
+						<div class="field input-field">
+                            <input name="code" placeholder="SecurityCode : Enter favourite teacher" class="password" required>
+                        </div>
+						
+                        
+                        <div class="field button-field">
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div class="form-link">
+                        <span>Already had account? <a href="LoginPage.html" class="link signup-link"> Login</a></span>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </body>
+</html>

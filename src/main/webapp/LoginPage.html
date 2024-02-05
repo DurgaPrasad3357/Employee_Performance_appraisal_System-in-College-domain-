@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" href="style.css">                        
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="FirstServlet"  method="post">
+                        <div class="field input-field">
+                            <input type="email"  name="email" placeholder="Enter email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password"  name="password" placeholder="Enter password" class="password" required>
+                        </div>
+						<div class="drop-down">
+						<select name="position">
+						<option value="principal">Principal</option>
+						<option value="hod">HOD</option>
+						<option value="faculty">Faculty</option>
+						</select>
+						</div>
+                        <div class="form-link">
+                            <a href="ForgetPassword.html" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <div class="field button-field">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="RegisterPage.html" class="link signup-link"> Register</a></span>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </body>
+</html>
